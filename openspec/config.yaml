@@ -1,20 +1,20 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+context: |
+  This is a personal portfolio website for a software developer. The purpose of the site
+  is to showcase the developer's skills, experience, and past projects to visitors.
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+  Tech stack:
+  - Next.js (App Router) with TypeScript
+  - Docker for containerization (multi-stage build, standalone output)
+  - No backend or database — this is a static/SSR frontend only
+
+  Project structure:
+  - All Next.js source lives under frontend/
+  - Root contains infrastructure: Makefile, Dockerfile (inside frontend/), openspec/
+  - Makefile targets: run-dev, run-prod
+
+  Development philosophy:
+  - Spec-driven development: specs are written before code
+  - Prefer deterministic, well-scoped changes over large sweeping ones
+  - Features should be ambitious but implementation steps should be small and verifiable
