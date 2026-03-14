@@ -1,0 +1,20 @@
+:root {
+  /* Typography */
+  --ad-font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --ad-font-label: var(--font-josefin), "Josefin Sans", "Futura", sans-serif;
+
+  /* Palette */
+  --ad-color-bg: #0d0d0d;
+  --ad-color-gold: #c9a84c;
+  --ad-color-gold-light: #e8c97a;
+  --ad-color-cream: #f0e6cc;
+  --ad-color-muted: #7a6b49;
+  --ad-color-rule: #c9a84c;
+
+  /* Spacing */
+  --ad-spacing-section: 4rem;
+  --ad-spacing-group: 2.5rem;
+
+  /* Borders */
+  --ad-border-rule: 1px solid var(--ad-color-rule);
+}

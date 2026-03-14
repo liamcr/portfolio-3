@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Playfair_Display, UnifrakturMaguntia } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display, UnifrakturMaguntia, Cormorant_Garamond, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import "../components/newspaper/newspaper.tokens.css";
+import "../components/art-deco/art-deco.tokens.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,19 @@ const unifraktur = UnifrakturMaguntia({
   weight: "400",
 });
 
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+});
+
+const josefin = Josefin_Sans({
+  variable: "--font-josefin",
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: "Liam Crocket",
   description: "Software engineer, builder of things.",
@@ -36,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${unifraktur.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${unifraktur.variable} ${cormorant.variable} ${josefin.variable}`}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

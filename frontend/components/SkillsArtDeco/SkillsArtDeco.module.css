@@ -1,0 +1,114 @@
+.section {
+  min-height: 100svh;
+  background-color: var(--ad-color-bg);
+  color: var(--ad-color-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--ad-spacing-section) 2rem;
+  text-align: center;
+}
+
+.inner {
+  max-width: 680px;
+  width: 100%;
+}
+
+/* ── Section Title ── */
+.title {
+  font-family: var(--ad-font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ad-color-gold);
+  margin: 0 0 0.25rem;
+  line-height: 1;
+}
+
+.titleRule {
+  width: 100%;
+  border: none;
+  border-top: var(--ad-border-rule);
+  margin: 0.75rem auto 1.5rem;
+  opacity: 0.5;
+}
+
+/* ── Intro statement ── */
+.intro {
+  font-family: var(--ad-font-display);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ad-color-cream);
+  line-height: 1.7;
+  margin: 0 0 2.5rem;
+  opacity: 0.85;
+}
+
+/* ── Double rule separator ── */
+.doubleRule {
+  position: relative;
+  width: 100%;
+  margin: 0 0 2.5rem;
+  border: none;
+  height: 9px;
+  background:
+    linear-gradient(var(--ad-color-rule), var(--ad-color-rule)) top/100% 1px no-repeat,
+    linear-gradient(var(--ad-color-rule), var(--ad-color-rule)) bottom/100% 1px no-repeat;
+  opacity: 0.6;
+}
+
+/* ── Skill Group ── */
+.group {
+  margin-bottom: var(--ad-spacing-group);
+}
+
+.categoryLabel {
+  font-family: var(--ad-font-label);
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: var(--ad-color-gold);
+  margin: 0 0 0.6rem;
+}
+
+.skills {
+  font-family: var(--ad-font-label);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ad-color-cream);
+  line-height: 2;
+}
+
+.dot {
+  color: var(--ad-color-gold);
+  margin: 0 0.5em;
+  opacity: 0.7;
+}
+
+/* ── Ornamental Divider ── */
+.divider {
+  position: relative;
+  width: 60%;
+  margin: 0 auto var(--ad-spacing-group);
+  border: none;
+  border-top: 1px solid rgba(201, 168, 76, 0.35);
+}
+
+.divider::before {
+  content: "◆";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--ad-color-bg);
+  color: var(--ad-color-gold);
+  font-size: 0.55rem;
+  padding: 0 0.6em;
+  line-height: 1;
+}
