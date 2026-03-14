@@ -1,0 +1,15 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+}
+
+.body {
+  font-family: var(--np-font-body);
+  font-size: var(--np-font-size-body);
+  line-height: var(--np-line-height-body);
+  color: var(--np-color-ink);
+  margin: 0 0 1em;
+  text-align: justify;
+  hyphens: auto;
+}

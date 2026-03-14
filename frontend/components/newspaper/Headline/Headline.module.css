@@ -1,0 +1,29 @@
+.headline {
+  font-family: var(--np-font-body);
+  font-weight: 900;
+  color: var(--np-color-ink);
+  line-height: 1.1;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: var(--np-border-rule);
+}
+
+.centered {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.xl {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.lg {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+}
+
+.md {
+  font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+}

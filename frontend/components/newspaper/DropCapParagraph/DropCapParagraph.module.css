@@ -1,0 +1,19 @@
+.paragraph {
+  font-family: var(--np-font-body);
+  font-size: var(--np-font-size-body);
+  line-height: var(--np-line-height-body);
+  color: var(--np-color-ink);
+  margin: 0 0 1em;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.paragraph::first-letter {
+  font-family: var(--np-font-body);
+  font-size: 4.5em;
+  font-weight: 700;
+  line-height: 0.8;
+  float: left;
+  margin: 0.05em 0.1em 0 0;
+  color: var(--np-color-ink);
+}

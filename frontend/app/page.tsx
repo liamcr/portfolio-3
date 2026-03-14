@@ -1,7 +1,9 @@
+import HomeNewspaperHero from "../components/HomeNewspaperHero/HomeNewspaperHero";
+
 export default function Home() {
   return (
     <main>
-      <p>Hello world</p>
+      <HomeNewspaperHero />
     </main>
   );
 }

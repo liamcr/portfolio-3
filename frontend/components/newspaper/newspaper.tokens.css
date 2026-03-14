@@ -1,0 +1,24 @@
+:root {
+  /* Typography */
+  --np-font-body: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --np-font-masthead: var(--font-unifraktur), "UnifrakturMaguntia", serif;
+
+  /* Palette */
+  --np-color-ink: #1a1008;
+  --np-color-paper: #f2ead8;
+  --np-color-rule: #1a1008;
+
+  /* Spacing */
+  --np-spacing-column-gap: 2rem;
+  --np-spacing-section: 1.5rem;
+
+  /* Borders */
+  --np-border-rule: 1px solid var(--np-color-rule);
+  --np-border-rule-thick: 3px solid var(--np-color-rule);
+
+  /* Body text */
+  --np-font-size-body: 1rem;
+  --np-line-height-body: 1.65;
+  --np-font-size-caption: 0.8rem;
+  --np-font-size-meta: 0.75rem;
+}

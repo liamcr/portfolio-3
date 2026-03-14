@@ -1,0 +1,6 @@
+.wrapper {
+  background-color: var(--np-color-paper);
+  color: var(--np-color-ink);
+  min-height: 100vh;
+  font-family: var(--np-font-body);
+}

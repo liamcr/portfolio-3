@@ -1,0 +1,34 @@
+.hero {
+  min-height: 100svh;
+  background-color: var(--np-color-paper);
+  color: var(--np-color-ink);
+  font-family: var(--np-font-body);
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 2rem 0;
+}
+
+.lede {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.scrollCue {
+  text-align: center;
+  padding: 1.25rem 0 1.5rem;
+  font-family: var(--np-font-body);
+  font-size: var(--np-font-size-meta);
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  color: var(--np-color-ink);
+  opacity: 0.6;
+  border-top: var(--np-border-rule);
+  margin-top: auto;
+}

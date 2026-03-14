@@ -1,0 +1,22 @@
+.columns {
+  column-gap: var(--np-spacing-column-gap);
+  column-rule: var(--np-border-rule);
+  orphans: 3;
+  widows: 3;
+}
+
+.col2 {
+  column-count: 2;
+}
+
+.col3 {
+  column-count: 3;
+}
+
+@media (max-width: 639px) {
+  .col2,
+  .col3 {
+    column-count: 1;
+    column-rule: none;
+  }
+}
